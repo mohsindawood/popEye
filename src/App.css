@@ -1,0 +1,195 @@
+body {
+  background: #eff6ff !important;
+  font-family: "Readex Pro", sans-serif !important;
+}
+
+.gauge {
+  /* background: radial-gradient(circle at 30% 40%, #fff, #fff 20%, #ccc 50%); */
+  border-bottom: 1px dashed #555;
+  border-radius: 999px 999px 0 0;
+  /* box-shadow: inset 3px 3px 15px rgba(0, 0, 0, 0.8); */
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 150px;
+  left: 50%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0%;
+  transform: translate(-50%, -25%);
+  width: 100%;
+}
+
+.gauge::after {
+  content: "";
+  position: absolute;
+  height: 27px;
+  width: 27px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-radius: 50%;
+  border: 1px solid #5c90ff;
+  bottom: -7%;
+  left: 50%;
+  transform: translate(-50%);
+  background: rgb(45, 169, 241);
+}
+
+.gauge::before {
+  content: "";
+  position: absolute;
+  height: 75%;
+  width: 1%;
+  background: rgb(45, 169, 241);
+  transform-origin: bottom center;
+  left: 50%;
+  bottom: 5%;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 999px 999px 0px 0px;
+  transform: rotate(8deg);
+  transition: 200ms;
+  animation: gaugeIt 4s linear infinite;
+}
+
+@keyframes gaugeIt {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(-20deg);
+  }
+
+  20% {
+    transform: rotate(14deg);
+  }
+
+  30% {
+    transform: rotate(33deg);
+  }
+
+  40% {
+    transform: rotate(-54deg);
+  }
+
+  50% {
+    transform: rotate(21deg);
+  }
+
+  60% {
+    transform: rotate(8deg);
+  }
+
+  70% {
+    transform: rotate(-28deg);
+  }
+
+  80% {
+    transform: rotate(23deg);
+  }
+
+  90% {
+    transform: rotate(76deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.gauge1 {
+  /* background: radial-gradient(circle at 30% 40%, #fff, #fff 20%, #ccc 50%); */
+  border-bottom: 1px dashed #555;
+  border-radius: 999px 999px 0 0;
+  /* box-shadow: inset 3px 3px 15px rgba(0, 0, 0, 0.8); */
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 150px;
+  right: 0%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0%;
+  transform: translate(-50%, -25%);
+  width: 100%;
+  transform: rotate(180deg);
+}
+
+.gauge1::after {
+  content: "";
+  position: absolute;
+  height: 27px;
+  width: 27px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border-radius: 50%;
+  border: 1px solid #5c90ff;
+  bottom: -7%;
+  left: 50%;
+  transform: translate(-50%);
+  background: rgb(45, 169, 241);
+}
+
+.gauge1::before {
+  content: "";
+  position: absolute;
+  height: 75%;
+  width: 1%;
+  background: rgb(45, 169, 241);
+  transform-origin: bottom center;
+  left: 50%;
+  bottom: 5%;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 999px 999px 0px 0px;
+  transform: rotate(8deg);
+  transition: 200ms;
+  animation: gaugeIt 4s linear infinite;
+}
+
+@keyframes gaugeIt {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(-20deg);
+  }
+
+  20% {
+    transform: rotate(14deg);
+  }
+
+  30% {
+    transform: rotate(33deg);
+  }
+
+  40% {
+    transform: rotate(-54deg);
+  }
+
+  50% {
+    transform: rotate(21deg);
+  }
+
+  60% {
+    transform: rotate(8deg);
+  }
+
+  70% {
+    transform: rotate(-28deg);
+  }
+
+  80% {
+    transform: rotate(23deg);
+  }
+
+  90% {
+    transform: rotate(76deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
